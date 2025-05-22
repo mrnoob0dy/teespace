@@ -83,4 +83,115 @@ label {
 
 legend {
   display: block;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./../fonts/PlusJakartaSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./../fonts/PlusJakartaSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./../fonts/PlusJakartaSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./../fonts/PlusJakartaSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./../fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./../fonts/Lato-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --fuschia-100: #ef5da8;
+  --fuschia-80: #f178b6;
+  --fuschia-60: #fcddec;
+  --iris-100: #5d5fef;
+  --iris-80: #7879f1;
+  --iris-60: #a5a6f6;
+  --color-green: #2ebb77;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey: #7e7e7e;
+  --font-family: "Plus Jakarta Sans", sans-serif;
+  --second-family: "Lato", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1470px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title-2 {
+  font-size: 48px;
+  line-height: 125%;
+  color: var(--color-black);
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  text-align: center;
+  color: var(--color-grey);
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  padding: 0 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 350%;
+  color: var(--color-white);
+  border-radius: 12px;
+  border: 1px solid transparent;
+}
+.button--white {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-black);
+  background-color: var(--color-white);
 }/*# sourceMappingURL=mian.css.map */
