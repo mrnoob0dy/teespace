@@ -1,0 +1,36 @@
+.bring-ideas {
+  padding: 111px 0 92px;
+  background-color: #f5f5f5;
+}
+
+.bring-ideas__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.bring-ideas__img {
+  flex-shrink: 0;
+}
+
+.bring-ideas__text {
+  max-width: 546px;
+  width: 100%;
+}
+
+.bring-ideas__title {
+  margin-bottom: 30px;
+}
+
+.bring-ideas__description {
+  max-width: 463px;
+  margin-bottom: 42px;
+
+  p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: var(--color-grey);
+  }
+}

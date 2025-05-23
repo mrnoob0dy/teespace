@@ -8,7 +8,65 @@
 }
 
 .custom-shirts__subtitle {
-  margin-bottom: 85px;
   max-width: 680px;
   margin: 0 auto;
+  margin-bottom: 85px;
+}
+
+.custom-shirts__items {
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+}
+
+.custom-shirts__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.custom-shirts__item-img {
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.custom-shirts__item-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  aspect-ratio: 1;
+  font-size: 18px;
+  line-height: 311%;
+  color: var(--color-black);
+  border-radius: 28px;
+  box-shadow: 0 7px 30px 0 rgba(0, 0, 0, 0.13);
+  background-color: var(--color-white);
+}
+
+.custom-shirts__item-text {
+  max-width: 461px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.custom-shirts__item-title {
+  font-size: 32px;
+  line-height: 140%;
+  color: var(--color-black);
+}
+
+.custom-shirts__item-description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--color-grey);
 }
