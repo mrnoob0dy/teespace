@@ -10,6 +10,13 @@ body {
   margin: 0 auto;
 }
 
+.container-big {
+  max-width: 1870px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .title-2 {
   font-size: 48px;
   line-height: 125%;
@@ -33,9 +40,10 @@ body {
 }
 
 .button {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   height: 56px;
   padding: 0 30px;
   font-weight: 700;
@@ -44,11 +52,28 @@ body {
   color: var(--color-white);
   border-radius: 12px;
   border: 1px solid transparent;
+  background-color: var(--color-green);
+  transition: all 0.3s ease;
 
   &--white {
     font-weight: 700;
     font-size: 15px;
     color: var(--color-black);
     background-color: var(--color-white);
+  }
+
+  svg {
+    fill: var(--color-white);
+    transition: fill 0.3s ease;
+  }
+
+  &:hover {
+    color: var(--color-green);
+    border-color: var(--color-green);
+    background-color: var(--color-white);
+
+    svg {
+      fill: var(--color-green);
+    }
   }
 }
