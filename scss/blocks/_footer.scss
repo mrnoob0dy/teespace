@@ -1,0 +1,140 @@
+.footer {
+  padding: 92px 0 74px;
+  background-color: #f5f5f5;
+}
+
+.footer__items {
+  margin-bottom: 92px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-area: 15px;
+}
+
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer__logo {
+  margin-bottom: 5px;
+}
+
+.footer__email {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--color-grey);
+
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--color-green);
+  }
+}
+
+.footer__phone {
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--color-black);
+
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--color-green);
+  }
+}
+
+.footer__location {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--color-grey);
+}
+
+.footer__title {
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--color-black);
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer__list-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--color-grey);
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--color-green);
+  }
+}
+
+.footer__item-description {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 180%;
+  color: var(--color-grey);
+}
+
+.footer__form-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 19px 45px 19px 21px;
+  width: 100%;
+  height: 56px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 34px 0 rgba(0, 0, 0, 0.05);
+  background-color: var(--color-white);
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 12px;
+    background-image: url("./../images/footer/footer-arrow-black-right.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+.footer__form-input {
+  font-family: var(--font-family);
+  color: var(--color-black);
+  font-weight: 600;
+
+  &::placeholder {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    color: #9b9b9b;
+  }
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer__copyright {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--color-grey);
+}

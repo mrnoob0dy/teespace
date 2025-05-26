@@ -1,0 +1,21 @@
+.socials {
+  padding: 33px 0;
+}
+
+.socials__list {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.socials__list-link {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--color-black);
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--color-green);
+  }
+}
