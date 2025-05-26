@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .feedback__title {
@@ -19,9 +20,29 @@
 }
 
 .feedback__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  overflow: hidden;
+  margin-bottom: 68px;
+}
+
+.feedback__list-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--color-black) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  &.swiper-pagination-bullet-active {
+    width: 14px !important;
+    height: 14px !important;
+    border: 1px solid #000 !important;
+    background-color: var(--color-white) !important;
+  }
 }
 
 .feedback__item {
