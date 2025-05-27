@@ -1,0 +1,25 @@
+.print-shirts {
+  padding: 110px 0;
+  background-color: #f8f8f8;
+}
+
+.print-shirts__subtitle {
+  margin-bottom: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.print-shirts__title {
+  max-width: 580px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 78px;
+  text-align: center;
+}

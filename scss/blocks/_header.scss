@@ -5,6 +5,12 @@
   gap: 30px;
   padding: 24px 0;
   background-color: var(--color-white);
+
+  &--services {
+    .header__logo {
+      margin-right: 90px;
+    }
+  }
 }
 
 .header__menu-list {
@@ -12,6 +18,10 @@
   align-items: center;
   gap: 36px;
   margin-left: 220px;
+
+  &--services {
+    margin-left: 0;
+  }
 }
 
 .header__menu-link {

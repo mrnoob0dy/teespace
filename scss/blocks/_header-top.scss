@@ -5,6 +5,10 @@
   gap: 10px;
   padding: 13px 24px;
   background: linear-gradient(270deg, #dbf4e2 6.75%, #f6fdec 98.85%);
+
+  &--services {
+    background: #f4eefa;
+  }
 }
 
 .header__top-text {
@@ -12,6 +16,16 @@
   align-items: center;
   gap: 2px;
   margin-left: auto;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--color-black);
+
+  &--services {
+    font-size: 15px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #b479d9;
+  }
 }
 
 .header__top-link {

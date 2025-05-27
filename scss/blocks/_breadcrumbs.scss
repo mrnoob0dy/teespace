@@ -1,0 +1,22 @@
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.breadcrumbs__link {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 180%;
+  color: var(--color-grey);
+
+  &--active {
+    color: var(--color-black);
+  }
+}
+
+.breadcrumbs__item--line {
+  width: 20px;
+  height: 1px;
+  background-color: var(--color-grey);
+}
