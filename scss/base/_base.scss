@@ -97,3 +97,23 @@ body {
     }
   }
 }
+
+.link {
+  margin-bottom: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 18px;
+  height: 41px;
+  font-size: 18px;
+  line-height: 140%;
+  color: #b479d9;
+  border-radius: 40px;
+  background: rgba(180, 121, 217, 0.15);
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: var(--color-white);
+    background-color: #b479d9;
+  }
+}

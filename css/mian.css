@@ -234,6 +234,25 @@ body {
   fill: var(--color-black);
 }
 
+.link {
+  margin-bottom: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 18px;
+  height: 41px;
+  font-size: 18px;
+  line-height: 140%;
+  color: #b479d9;
+  border-radius: 40px;
+  background: rgba(180, 121, 217, 0.15);
+  transition: all 0.3s ease;
+}
+.link:hover {
+  color: var(--color-white);
+  background-color: #b479d9;
+}
+
 .breadcrumbs {
   display: inline-flex;
   align-items: center;
@@ -447,20 +466,6 @@ body {
 
 .hero__link {
   margin-bottom: 22px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 41px;
-  padding: 0 18px;
-  font-size: 18px;
-  line-height: 140%;
-  color: #b479d9;
-  border-radius: 40px;
-  background-color: rgba(180, 121, 217, 0.15);
-  transition: transform 0.3s ease;
-}
-.hero__link:hover {
-  transform: translateY(-2px);
 }
 
 .hero__title {
@@ -1439,21 +1444,6 @@ body {
 
 .printing-services__link {
   margin-bottom: 25px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 18px;
-  height: 41px;
-  font-size: 18px;
-  line-height: 140%;
-  color: #b479d9;
-  border-radius: 40px;
-  background-color: rgba(180, 121, 217, 0.15);
-  transition: all 0.3s ease;
-}
-.printing-services__link:hover {
-  color: var(--color-white);
-  background-color: #b479d9;
 }
 
 .printing-services__title {
@@ -1520,6 +1510,9 @@ body {
   padding: 110px 0;
   background-color: #f8f8f8;
 }
+.print-shirts--services-detail {
+  height: 830px;
+}
 
 .print-shirts__subtitle {
   margin-bottom: 26px;
@@ -1548,6 +1541,52 @@ body {
   align-items: flex-start;
 }
 
+.print-shirts__text {
+  max-width: 475px;
+  width: 100%;
+}
+
+.print-shirts__sublink {
+  margin-bottom: 10px;
+}
+
+.print-shirts__text-title {
+  margin-bottom: 11px;
+}
+
+.print-shirts__description {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--color-grey);
+}
+
+.print-shirts__link {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--color-black);
+  transition: color 0.3s ease;
+}
+.print-shirts__link span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.print-shirts__link:hover {
+  color: var(--color-green);
+}
+.print-shirts__link:hover span {
+  color: #b479d9;
+}
+
 .print-shirts__content-img {
   flex-shrink: 0;
 }
@@ -1557,6 +1596,10 @@ body {
   width: 100%;
   display: grid;
   row-gap: 30px;
+}
+.print-shirts__accordion-group--services-detail {
+  max-width: 860px;
+  width: 100%;
 }
 
 .print-shirts__accordion {
@@ -1673,4 +1716,100 @@ body {
   font-size: 24px;
   line-height: 140%;
   color: var(--color-white);
+}
+
+.tools {
+  padding: 95px 0 60px;
+  background-color: var(--color-white);
+}
+
+.tools__inner {
+  margin-bottom: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.tools__text {
+  max-width: 525px;
+  width: 100%;
+}
+
+.tools__img {
+  overflow: hidden;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.tools__sublink {
+  margin-bottom: 10px;
+}
+
+.tools__title {
+  margin-bottom: 11px;
+}
+
+.tools__description {
+  margin-bottom: 45px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--color-grey);
+}
+
+.tools__text-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tools__text-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.tools__text-img {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #e2f5f2;
+}
+
+.tools__cards-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.tools__card {
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  gap: 32px;
+}
+
+.tools__card-img {
+  width: 60px;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+}
+
+.tools__card-title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--color-black);
+}
+
+.tools__card-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--color-grey);
 }/*# sourceMappingURL=mian.css.map */

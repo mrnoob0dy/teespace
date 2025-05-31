@@ -1,6 +1,10 @@
 .print-shirts {
   padding: 110px 0;
   background-color: #f8f8f8;
+
+  &--services-detail {
+    height: 830px;
+  }
 }
 
 .print-shirts__subtitle {
@@ -30,6 +34,54 @@
   align-items: flex-start;
 }
 
+.print-shirts__text {
+  max-width: 475px;
+  width: 100%;
+}
+
+.print-shirts__sublink {
+  margin-bottom: 10px;
+}
+
+.print-shirts__text-title {
+  margin-bottom: 11px;
+}
+
+.print-shirts__description {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--color-grey);
+}
+
+.print-shirts__link {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--color-black);
+  transition: color 0.3s ease;
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    color: var(--color-green);
+    span {
+      color: #b479d9;
+    }
+  }
+}
+
 .print-shirts__content-img {
   flex-shrink: 0;
 }
@@ -39,6 +91,11 @@
   width: 100%;
   display: grid;
   row-gap: 30px;
+
+  &--services-detail {
+    max-width: 860px;
+    width: 100%;
+  }
 }
 
 .print-shirts__accordion {

@@ -27,21 +27,6 @@
 
 .hero__link {
   margin-bottom: 22px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 41px;
-  padding: 0 18px;
-  font-size: 18px;
-  line-height: 140%;
-  color: #b479d9;
-  border-radius: 40px;
-  background-color: rgba(180, 121, 217, 0.15);
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: translateY(-2px);
-  }
 }
 
 .hero__title {
