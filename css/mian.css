@@ -1245,6 +1245,9 @@ body {
   padding: 92px 0 74px;
   background-color: #f5f5f5;
 }
+.footer--services {
+  background-color: var(--color-white);
+}
 
 .footer__items {
   margin-bottom: 92px;
@@ -1351,6 +1354,13 @@ body {
   background-repeat: no-repeat;
   background-position: right;
 }
+.footer__form-label--services {
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+}
+.footer__form-label--services::after {
+  opacity: 0;
+}
 
 .footer__form-input {
   font-family: var(--font-family);
@@ -1368,6 +1378,11 @@ body {
   font-weight: 500;
   font-size: 15px;
   color: #9b9b9b;
+}
+
+.footer-form__btn {
+  width: 100%;
+  display: flex;
 }
 
 .footer__bottom {
@@ -1449,6 +1464,22 @@ body {
 .printing-services__title {
   margin-bottom: 78px;
   text-align: center;
+}
+.printing-services__title span {
+  position: relative;
+}
+.printing-services__title span::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  z-index: -1;
+  display: inline-block;
+  width: 246px;
+  height: 15px;
+  background-image: url("./../images/icons/gradient-line.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .printing-services__list {
@@ -1810,6 +1841,289 @@ body {
 .tools__card-description {
   font-weight: 500;
   font-size: 16px;
+  line-height: 180%;
+  color: var(--color-grey);
+}
+
+.create-style {
+  padding: 60px 0 50px;
+  background-color: var(--color-white);
+}
+
+.create-style__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.create-style__title {
+  margin-bottom: 28px;
+  font-size: 40px;
+}
+
+.create-style__description {
+  margin-bottom: 44px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--color-grey);
+}
+
+.create-style__content {
+  max-width: 560px;
+  width: 100%;
+}
+
+.create-style__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.create-style__item {
+  max-width: 255px;
+  width: 100%;
+}
+
+.create-style__item-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 14px;
+}
+
+.create-style__item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  background-color: #e5f4ed;
+}
+.create-style__item-img--purple {
+  background-color: #f4eefa;
+}
+.create-style__item-img--orange {
+  background-color: #fdeae4;
+}
+
+.create-style__item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--color-black);
+}
+
+.create-style__item-description {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 180%;
+  color: var(--color-grey);
+}
+
+.create-style__img {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.create-style__imgs-col {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.create-style__imgs-col--50 {
+  padding-top: 50px;
+}
+
+.create-style__imgs {
+  display: flex;
+  gap: 30px;
+}
+
+.how-it-work {
+  padding: 35px 0 90px;
+  background-color: var(--color-white);
+}
+
+.how-it-work__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how-it-work__sublink {
+  margin-bottom: 30px;
+}
+
+.how-it-work__title {
+  text-align: center;
+  margin-bottom: 95px;
+}
+
+.how-it-work__cards {
+  display: flex;
+  justify-content: center;
+  gap: 87px;
+}
+
+.how-it-work__card {
+  position: relative;
+  display: inline-block;
+  max-width: 385px;
+  width: 100%;
+  text-align: center;
+}
+.how-it-work__card:hover .how-it-work__count {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+.how-it-work__card img {
+  position: absolute;
+  left: 313px;
+  top: 0;
+}
+.how-it-work__card .how-it-work__card-img {
+  top: 37px;
+}
+
+.how-it-work__count {
+  margin-bottom: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  aspect-ratio: 1;
+  font-size: 24px;
+  color: var(--color-green);
+  border-radius: 28px;
+  background-color: var(--color-white);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.how-it-work__card-title {
+  margin-bottom: 14px;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--color-black);
+}
+
+.how-it-work__card-description {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 180%;
+  color: var(--color-grey);
+}
+
+.services-testimonials {
+  padding: 70px 0;
+  background-color: var(--color-white);
+}
+
+.services-testimonials__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.services-testimonials__text {
+  max-width: 290px;
+  width: 100%;
+}
+
+.services-testimonials__link {
+  margin-bottom: 25px;
+}
+
+.services-testimonials__title {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.services-testimonials__title span {
+  position: relative;
+  z-index: 5;
+}
+.services-testimonials__title span::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 205px;
+  height: 15px;
+  background-image: url("./../images/icons/gradient-line.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.services-testimonials__description {
+  margin-bottom: 44px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--color-grey);
+}
+
+.services-testimonials__cards {
+  display: flex;
+  gap: 30px;
+}
+
+.services-testimonials__card {
+  padding: 67px 50px 40px 40px;
+  max-width: 440px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: var(--color-white);
+}
+
+.services-testimonials__card-title {
+  margin-bottom: 27px;
+  padding-top: 20px;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--color-black);
+  border-top: 1px dashed #f3bb2e;
+}
+
+.services-testimonials__description {
+  margin-bottom: 26px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  color: var(--color-black);
+}
+
+.services-testimonials__author {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.services-testimonials__author-img {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.services-testimonials__author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.services-testimonials__author-name {
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--color-black);
+}
+
+.services-testimonials__author-location {
+  font-weight: 500;
+  font-size: 15px;
   line-height: 180%;
   color: var(--color-grey);
 }/*# sourceMappingURL=mian.css.map */

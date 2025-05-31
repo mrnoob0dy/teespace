@@ -1,0 +1,112 @@
+.services-testimonials {
+  padding: 70px 0;
+  background-color: var(--color-white);
+}
+
+.services-testimonials__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.services-testimonials__text {
+  max-width: 290px;
+  width: 100%;
+}
+
+.services-testimonials__link {
+  margin-bottom: 25px;
+}
+
+.services-testimonials__title {
+  margin-bottom: 30px;
+  font-size: 40px;
+
+  span {
+    position: relative;
+    z-index: 5;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      z-index: -1;
+      display: block;
+      width: 205px;
+      height: 15px;
+      background-image: url("./../images/icons/gradient-line.png");
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+}
+
+.services-testimonials__description {
+  margin-bottom: 44px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--color-grey);
+}
+
+.services-testimonials__cards {
+  display: flex;
+  gap: 30px;
+}
+
+.services-testimonials__card {
+  padding: 67px 50px 40px 40px;
+  max-width: 440px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: var(--color-white);
+}
+
+.services-testimonials__card-title {
+  margin-bottom: 27px;
+  padding-top: 20px;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--color-black);
+  border-top: 1px dashed #f3bb2e;
+}
+
+.services-testimonials__description {
+  margin-bottom: 26px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  color: var(--color-black);
+}
+
+.services-testimonials__author {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.services-testimonials__author-img {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.services-testimonials__author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.services-testimonials__author-name {
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--color-black);
+}
+
+.services-testimonials__author-location {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 180%;
+  color: var(--color-grey);
+}

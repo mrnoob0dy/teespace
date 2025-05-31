@@ -15,6 +15,24 @@
 .printing-services__title {
   margin-bottom: 78px;
   text-align: center;
+
+  span {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      z-index: -1;
+      display: inline-block;
+      width: 246px;
+      height: 15px;
+      background-image: url("./../images/icons/gradient-line.png");
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
 }
 
 .printing-services__list {
