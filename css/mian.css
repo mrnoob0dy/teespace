@@ -1245,7 +1245,10 @@ body {
   margin-bottom: 92px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-area: 15px;
+  gap: 15px;
+}
+.footer__items--services {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .footer__item {
@@ -1537,4 +1540,137 @@ body {
   margin: 0 auto;
   margin-bottom: 78px;
   text-align: center;
+}
+
+.print-shirts__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.print-shirts__content-img {
+  flex-shrink: 0;
+}
+
+.print-shirts__accordion-group {
+  max-width: 580px;
+  width: 100%;
+  display: grid;
+  row-gap: 30px;
+}
+
+.print-shirts__accordion {
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+.print-shirts__accordion-summary {
+  list-style: none;
+}
+.print-shirts__accordion-summary::webkit-details-marker {
+  display: none;
+}
+.print-shirts__accordion-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px 20px 20px;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--color-black);
+  border-radius: 12px;
+  background-color: var(--color-white);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.print-shirts__accordion-title svg {
+  fill: var(--color-black);
+  transition-duration: 0.3s;
+}
+
+.print-shirts__accordion-details[open] + .print-shirts__accordion-content {
+  grid-template-rows: 1fr;
+  padding: 23px 30px 45px 20px;
+  background-color: #f8f8f8;
+}
+.print-shirts__accordion-details[open] .print-shirts__accordion-title {
+  color: var(--color-white);
+  background-color: var(--color-green);
+  box-shadow: 0 7px 30px 0 rgba(0, 0, 0, 0.13);
+}
+.print-shirts__accordion-details[open] .print-shirts__accordion-title svg {
+  fill: var(--color-white);
+  transform: rotate(180deg);
+}
+
+.print-shirts__accordion-content {
+  padding-left: 30px;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition-duration: 0.3s;
+}
+
+.print-shirts__accordion-content-inner {
+  overflow: hidden;
+}
+
+.print-shirts__accordion-content-body {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--color-grey);
+}
+
+.made-easy {
+  padding: 92px 0 107px;
+  background-color: var(--color-white);
+}
+
+.made-easy__title {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.made-easy__subtitle {
+  max-width: 680px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.made-easy__link {
+  display: inline-block;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.made-easy__link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 100%);
+  transition: opacity 0.3s ease;
+}
+.made-easy__link:hover {
+  transform: translateY(-2px);
+}
+.made-easy__link:hover::after {
+  opacity: 0;
+}
+
+.made-easy__link-title {
+  position: absolute;
+  z-index: 10;
+  bottom: 35px;
+  left: 35px;
+  max-width: 200px;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--color-white);
 }/*# sourceMappingURL=mian.css.map */

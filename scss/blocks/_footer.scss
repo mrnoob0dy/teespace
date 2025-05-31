@@ -7,7 +7,11 @@
   margin-bottom: 92px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-area: 15px;
+  gap: 15px;
+
+  &--services {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .footer__item {
