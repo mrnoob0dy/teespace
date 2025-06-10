@@ -1,0 +1,130 @@
+.card__link {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+  }
+}
+
+.card__img {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    border-radius: 12px;
+  }
+}
+
+.card__sale {
+  position: absolute;
+  z-index: 5;
+  top: 10px;
+  left: 10px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 3px;
+  color: var(--color-white);
+  background-color: var(--color-green);
+
+  &--red {
+    background-color: #f09155;
+  }
+}
+
+.card__new {
+  position: absolute;
+  z-index: 5;
+  top: 35px;
+  left: 10px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 3px;
+  color: var(--color-white);
+  background-color: #b479d9;
+}
+
+.card__info {
+  padding: 21px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.card__title {
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--color-black);
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--color-black);
+
+  &--green {
+    color: var(--color-green);
+  }
+
+  span {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 180%;
+    text-decoration: line-through;
+    color: #9b9b9b;
+  }
+}
+
+.card__colors {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: var(--color-black);
+  }
+}
+
+.card__color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  border-radius: 50%;
+  width: 21px;
+  aspect-ratio: 1;
+  border: 0.5px solid var(--color-grey);
+  background-color: var(--color-white);
+
+  span {
+    width: 17px;
+    aspect-ratio: 1;
+    background-color: #d7a983;
+    border-radius: 50%;
+  }
+
+  &--black {
+    span {
+      background-color: var(--color-black);
+    }
+  }
+}
