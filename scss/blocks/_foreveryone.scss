@@ -1,0 +1,107 @@
+.foreveryone {
+  margin: 0;
+  padding: 88px 0 130px;
+  background-image: url("./../images/foreveryone-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(180, 121, 217, 0.15);
+}
+
+.foreveryone__title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.foreveryone__subtitle {
+  margin-bottom: 65px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  text-align: center;
+  color: var(--color-grey);
+}
+
+.foreveryone__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.foreveryone__card {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: var(--color-white);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 24px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.foreveryone__card-popular {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 15px;
+  line-height: 180%;
+  text-align: center;
+  color: var(--color-white);
+  border-radius: 5px;
+  padding: 6px 20px;
+  background-color: var(--color-black);
+}
+
+.foreveryone__card-top {
+  margin-bottom: 38px;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 54px;
+  border-bottom: 1px solid #eee;
+}
+
+.foreveryone__card-title {
+  margin-bottom: 28px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.foreveryone__card-price {
+  font-size: 48px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--color-black);
+
+  span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--color-grey);
+  }
+}
+
+.foreveryone__card-list {
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.foreveryone__card-link {
+  display: flex;
+  color: var(--color-black);
+  background-color: rgba(46, 187, 119, 0.1);
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    color: var(--color-white);
+    background-color: var(--color-green);
+  }
+}
